@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Android Training</string>
+
+    <string name="welcome">Welcome to App Training!</string>
+    <string name="firstMessage">There are many things you should learn about Android App development.
+    There will be no way to learn them from this short training class. There is a copy of the basic code you will need
+        for this training class at a git repository. If you know how to use git you can clone that and open the project
+        in android studio, or if you are a genius you can do it all from the command line.
+    </string>
+
+
+
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_first_launched">firstLaunched</string>
+
+    <string name="hello_world">Hello world!</string>
+</resources>
