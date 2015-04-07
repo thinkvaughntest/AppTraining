@@ -18,7 +18,11 @@
 
 
     <string name="action_settings">Settings</string>
-    <string name="title_activity_first_launched">firstLaunched</string>
+    <string name="title_activity_first_launched">First Activity</string>
 
-    <string name="hello_world">Hello world!</string>
+    <string name="hello_world">This says it is the first activity, but really it is the second activity. The page that
+    you just came from was actually the first activity. We are call this the first activity as it is the first
+    activity launch from your application other than the Main Activity where you just came from. \n\n
+    There are a few things you need to know about an activity like the activity life cycle and how to start an Activity.
+    You can learn about that below or skip to the next activity.</string>
 </resources>
