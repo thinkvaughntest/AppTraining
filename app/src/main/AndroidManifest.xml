@@ -20,6 +20,18 @@
             android:name=".firstLaunched"
             android:label="@string/title_activity_first_launched" >
         </activity>
+        <activity
+            android:name=".activityLifeCycle"
+            android:label="@string/title_activity_activity_life_cycle" >
+        </activity>
+        <activity
+            android:name=".teamsPage"
+            android:label="@string/title_activity_teams_page" >
+        </activity>
+        <activity
+            android:name=".teamTab"
+            android:label="@string/title_activity_team_tab" >
+        </activity>
     </application>
 
 </manifest>

@@ -25,4 +25,13 @@
     activity launch from your application other than the Main Activity where you just came from. \n\n
     There are a few things you need to know about an activity like the activity life cycle and how to start an Activity.
     You can learn about that below or skip to the next activity.</string>
+
+    <string name="title_activity_activity_life_cycle">Activity Life Cycle</string>
+    <string name="title_activity_teams_page">teamsPage</string>
+    <string name="title_activity_team_tab">teamTab</string>
+
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
 </resources>
