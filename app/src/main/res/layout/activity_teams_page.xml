@@ -21,7 +21,9 @@
             android:layout_height="wrap_content"
             android:text="Trainer"
             android:id="@+id/button3"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:onClick="launchTrainerPage"
+            />
 
         <Button
             android:layout_width="wrap_content"
@@ -43,6 +45,6 @@
             android:text="Team 3"
             android:id="@+id/button6"
             android:layout_gravity="center_horizontal"
-            android:onClick="launchActivityLifeCycle"/>
+            />
     </LinearLayout>
 </RelativeLayout>

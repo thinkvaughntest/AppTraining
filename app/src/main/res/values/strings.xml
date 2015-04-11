@@ -27,11 +27,11 @@
     You can learn about that below or skip to the next activity.</string>
 
     <string name="title_activity_activity_life_cycle">Activity Life Cycle</string>
-    <string name="title_activity_teams_page">teamsPage</string>
-    <string name="title_activity_team_tab">teamTab</string>
+    <string name="title_activity_teams_page">Teams Page</string>
+    <string name="title_activity_trainer">Trainer: Jon Vaughn</string>
+    <string name="title_activity_trainer_webview">Trainer Webview</string>
 
 
-    <string name="title_section1">Section 1</string>
-    <string name="title_section2">Section 2</string>
-    <string name="title_section3">Section 3</string>
+
+
 </resources>

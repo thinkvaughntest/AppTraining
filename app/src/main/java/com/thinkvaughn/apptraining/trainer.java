@@ -8,19 +8,19 @@ import android.view.MenuItem;
 import android.view.View;
 
 
-public class teamsPage extends ActionBarActivity {
+public class trainer extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_teams_page);
+        setContentView(R.layout.activity_trainer);
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_teams_page, menu);
+        getMenuInflater().inflate(R.menu.menu_trainer, menu);
         return true;
     }
 
@@ -39,8 +39,8 @@ public class teamsPage extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void launchTrainerPage(View v){
-        Intent intent = new Intent(this, trainer.class);
+    public void launchTrainerWebview(View v){
+        Intent intent = new Intent(this, trainerWebview.class);
         startActivity(intent);
-    }//ends launchActivityLifeCycle
+    }
 }
