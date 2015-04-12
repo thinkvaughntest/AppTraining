@@ -47,5 +47,6 @@ public class trainer extends ActionBarActivity {
         Intent intent = new Intent(this, trainerWebview.class);
         intent.putExtra("webviewlink", webviewlink.getText().toString());
         startActivity(intent);
+
     }
 }

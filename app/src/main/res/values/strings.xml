@@ -30,7 +30,12 @@
     <string name="title_activity_teams_page">Teams Page</string>
     <string name="title_activity_trainer">Trainer: Jon Vaughn</string>
     <string name="title_activity_trainer_webview">Trainer Webview</string>
+    <string name="whyWebview">We will be mostly creating WebView applications. This allows you to
+    turn any website into a quick native mobile application. Go on. Give it a try.</string>
 
+    <string name="title_activity_splash_screen">splashScreen</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 
 
 </resources>
