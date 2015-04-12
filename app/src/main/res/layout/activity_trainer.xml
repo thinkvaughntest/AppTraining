@@ -8,15 +8,13 @@
 
 
     <EditText
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:id="@+id/webviewText"
-        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/textView3"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="80dp"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="wrap_content"
@@ -43,7 +41,7 @@
         android:layout_height="wrap_content"
         android:text="For some of our apps we may need to get the users location. There are different ways we can get the users location. You should implement the best and safest ways."
         android:id="@+id/textView6"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="9dp"
         android:layout_below="@+id/textView7"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
@@ -54,7 +52,7 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Location"
         android:id="@+id/textView7"
-        android:layout_marginTop="19dp"
+        android:layout_marginTop="8dp"
         android:layout_below="@+id/button8"
         android:layout_centerHorizontal="true" />
 
@@ -63,8 +61,36 @@
         android:layout_height="wrap_content"
         android:text="SHOW LOCATION"
         android:id="@+id/button4"
+        android:onClick="showLocation"
         android:layout_below="@+id/textView6"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Call Trainer"
+        android:id="@+id/button5"
+        android:onClick="callTrainer"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/textView9"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Phone Calls"
+        android:id="@+id/textView8"
+        android:layout_below="@+id/button4"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="21dp"
-        android:onClick="showLocation"/>
+        android:layout_marginTop="11dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="We may need to have our app make phone calls. You can call me and ask me how if you want."
+        android:id="@+id/textView9"
+        android:layout_below="@+id/textView8"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp" />
 </RelativeLayout>

@@ -1,6 +1,7 @@
 package com.thinkvaughn.apptraining;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Gravity;
@@ -62,5 +63,13 @@ public class trainer extends ActionBarActivity {
             t.setGravity(Gravity.CENTER, 0, 0);
             t.show();
         }
+    }
+
+    public void callTrainer(View v){
+
+        Intent intent = new Intent(Intent.ACTION_CALL);
+        intent.setData(Uri.parse("tel:+919007748046"));
+        startActivity(intent);
+
     }
 }
