@@ -52,4 +52,5 @@
     <string name="todolist">
         *Each team should create a button with their team name in the layout file for this activity
     \n*Each team should create a function to launch their team activity when their team button is pressed.</string>
+    <string name="title_activity_database">database</string>
 </resources>

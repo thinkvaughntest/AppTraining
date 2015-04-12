@@ -16,8 +16,9 @@
         android:text="Activity Life Cycle"
         android:id="@+id/button"
         android:onClick="launchActivityLifeCycle"
-        android:layout_above="@+id/button2"
-        android:layout_centerHorizontal="true" />
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp" />
 
     <Button
         android:layout_width="wrap_content"

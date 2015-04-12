@@ -3,19 +3,20 @@
     package="com.thinkvaughn.apptraining" >
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
-
+    <uses-permission android:name="android.permission.SEND_SMS" />
 
     <application
         android:allowBackup="true"
         android:icon="@drawable/launchicon"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
+
         <!-- Splash screen -->
         <activity
-            android:name="com.thinkvaughn.apptraining.splashScreen"
+            android:name=".splashScreen"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Black.NoTitleBar" >
@@ -28,7 +29,6 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name" >
-
         </activity>
         <activity
             android:name=".firstLaunched"
@@ -50,7 +50,10 @@
             android:name=".trainerWebview"
             android:label="@string/title_activity_trainer_webview" >
         </activity>
-
+        <activity
+            android:name=".database"
+            android:label="@string/title_activity_database" >
+        </activity>
     </application>
 
 </manifest>

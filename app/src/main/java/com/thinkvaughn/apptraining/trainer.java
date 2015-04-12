@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.telephony.SmsManager;
 import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -15,6 +16,7 @@ import android.widget.Toast;
 public class trainer extends ActionBarActivity {
     EditText webviewlink;
     GPSEngine gps;
+    boolean messageSent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +24,7 @@ public class trainer extends ActionBarActivity {
         setContentView(R.layout.activity_trainer);
         webviewlink = (EditText) findViewById(R.id.webviewText);
         gps = new GPSEngine(this);
+        messageSent = false;
 
     }
 
@@ -70,6 +73,23 @@ public class trainer extends ActionBarActivity {
         Intent intent = new Intent(Intent.ACTION_CALL);
         intent.setData(Uri.parse("tel:+919007748046"));
         startActivity(intent);
+
+    }
+    public void messageTrainer(View v){
+        if(!messageSent){
+            String number = "9007748046";
+            String message = "Can you help me send a message or make a phone call please?";
+            SmsManager smsManager =     SmsManager.getDefault();
+            smsManager.sendTextMessage(number, null, message, null, null);
+            Toast t = Toast.makeText(getApplicationContext(), "Message Sent!", Toast.LENGTH_LONG);
+            t.setGravity(Gravity.CENTER, 0, 0);
+            t.show();
+            messageSent = true;
+        }else{
+            Toast t = Toast.makeText(getApplicationContext(), "You already sent the message. Please don't spam my inbox!", Toast.LENGTH_LONG);
+            t.setGravity(Gravity.CENTER, 0, 0);
+            t.show();
+        }
 
     }
 }
