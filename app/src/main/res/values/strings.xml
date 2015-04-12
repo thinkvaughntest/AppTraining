@@ -12,6 +12,16 @@
         string. :)
         \n
         https://github.com/thinkvaughntest/AppTraining.git
+
+             \n\n
+        TO DO LIST:\n
+        *Each student should create a github account and email their team leader their username.
+        \n*Each Team leader should email me the list of usernames including their own.
+        \n*Each student should clone this project from github to their local machine.
+        \n*Each team member should create a branch with their name.
+       \n*Each team leader should create a branch for the team. Team member branches should be
+        merged with the Team Branch. Team Branch should be merged with the Training branch.
+
     </string>
 
 
@@ -24,7 +34,9 @@
     you just came from was actually the first activity. We are call this the first activity as it is the first
     activity launch from your application other than the Main Activity where you just came from. \n\n
     There are a few things you need to know about an activity like the activity life cycle and how to start an Activity.
-    You can learn about that below or skip to the next activity.</string>
+    You can learn about that below or skip to the next activity.
+
+    </string>
 
     <string name="title_activity_activity_life_cycle">Activity Life Cycle</string>
     <string name="title_activity_teams_page">Teams Page</string>
@@ -37,5 +49,7 @@
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
 
-
+    <string name="todolist">
+        *Each team should create a button with their team name in the layout file for this activity
+    \n*Each team should create a function to launch their team activity when their team button is pressed.</string>
 </resources>

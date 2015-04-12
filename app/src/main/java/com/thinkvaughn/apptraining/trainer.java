@@ -11,6 +11,7 @@ import android.widget.EditText;
 
 public class trainer extends ActionBarActivity {
     EditText webviewlink;
+    GPSEngine gps;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
