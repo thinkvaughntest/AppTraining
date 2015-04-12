@@ -58,8 +58,9 @@ public class trainer extends ActionBarActivity {
         if(gps.canGetLocation()){
             double latitude = gps.getLatitude();
             double longitude = gps.getLongitude();
-            Toast.makeText(getApplicationContext(), "Your Location is - \nLat: " + latitude + "\nLong: " + longitude, Toast.LENGTH_LONG).show();
-
+            Toast t = Toast.makeText(getApplicationContext(), "Your Location is - \nLat: " + latitude + "\nLong: " + longitude, Toast.LENGTH_LONG);
+            t.setGravity(Gravity.CENTER, 0, 0);
+            t.show();
         }
     }
 }
