@@ -3,10 +3,12 @@ package com.thinkvaughn.apptraining;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 
 public class trainer extends ActionBarActivity {
@@ -18,6 +20,8 @@ public class trainer extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_trainer);
         webviewlink = (EditText) findViewById(R.id.webviewText);
+        gps = new GPSEngine(this);
+
     }
 
 
@@ -49,5 +53,13 @@ public class trainer extends ActionBarActivity {
         intent.putExtra("webviewlink", webviewlink.getText().toString());
         startActivity(intent);
 
+    }
+    public void showLocation(View v){
+        if(gps.canGetLocation()){
+            double latitude = gps.getLatitude();
+            double longitude = gps.getLongitude();
+            Toast.makeText(getApplicationContext(), "Your Location is - \nLat: " + latitude + "\nLong: " + longitude, Toast.LENGTH_LONG).show();
+
+        }
     }
 }
