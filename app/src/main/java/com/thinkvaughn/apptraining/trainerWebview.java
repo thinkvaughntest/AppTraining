@@ -1,5 +1,6 @@
 package com.thinkvaughn.apptraining;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.KeyEvent;
@@ -22,7 +23,10 @@ public class trainerWebview extends ActionBarActivity {
         WebSettings webSettings = myWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
         myWebView.setWebViewClient(new WebViewClient());
-        myWebView.loadUrl("http://www.thinkvaughn.com");
+        Intent intent = getIntent();
+
+        String link = intent.getStringExtra("webviewlink");
+        myWebView.loadUrl("http://" + link);
 
 
     }

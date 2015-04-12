@@ -6,14 +6,17 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.EditText;
 
 
 public class trainer extends ActionBarActivity {
+    EditText webviewlink;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_trainer);
+        webviewlink = (EditText) findViewById(R.id.webviewText);
     }
 
 
@@ -40,7 +43,9 @@ public class trainer extends ActionBarActivity {
     }
 
     public void launchTrainerWebview(View v){
+
         Intent intent = new Intent(this, trainerWebview.class);
+        intent.putExtra("webviewlink", webviewlink.getText().toString());
         startActivity(intent);
     }
 }
